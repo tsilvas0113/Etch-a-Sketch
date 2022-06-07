@@ -27,6 +27,8 @@ function changePad() {
         padContainer.removeChild(padContainer.firstChild);
     }
     grid(userChoice);
+    let padSquare = document.querySelectorAll('.pad-square');
+    padSquare.forEach((padsquare) => {padsquare.addEventListener('mouseover', changeColor)});
 }
 
 let gridSize = 16;
@@ -34,3 +36,6 @@ grid(gridSize);
 
 const btn = document.querySelector('.grid-change');
 btn.addEventListener('click', changePad);
+
+let padSquare = document.querySelectorAll('.pad-square');
+padSquare.forEach(padsquare => {padsquare.addEventListener('mouseover', changeColor)});
