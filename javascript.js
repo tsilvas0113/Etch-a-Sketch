@@ -9,5 +9,9 @@ function grid(num) {
     };
 };
 
+function changeColor(e) {
+    e.target.style.background = 'yellow';
+}
+
 let gridSize = 16;
 grid(gridSize);
